@@ -7,6 +7,7 @@
 </p>
 
 <p align="center">
+  <a href="https://wgh208.github.io/QRstudio/"><img src="https://img.shields.io/badge/在线演示-06b6d4?style=flat-square" alt="Live Demo" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" alt="MIT License" /></a>
   <img src="https://img.shields.io/badge/backend-none-06b6d4?style=flat-square" alt="No Backend" />
   <img src="https://img.shields.io/badge/QR%20types-11-8b5cf6?style=flat-square" alt="11 QR Types" />
