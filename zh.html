@@ -190,7 +190,6 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
       <span class="bn">QR <b>StarCode</b></span>
     </a>
     <div class="hdr-tools">
-      <a href="blog/zh/" id="blog-link" class="lang-sel" style="text-decoration:none;display:inline-flex;align-items:center;gap:4px" data-i18n="nav.blog">📖 Blog Articles</a>
       <span class="lang-wrap">
         <span class="globe" aria-hidden="true">🌐</span>
         <select class="lang-sel" id="lang-sel" onchange="goLang(this.value)" aria-label="Language / 语言 / Язык / 言語 / 언어">
@@ -594,7 +593,6 @@ function setLang(l){
   document.getElementById('lnk-canonical').href=pageUrl;
   document.getElementById('og-url').content=pageUrl;
   applyI18n();
-  const bl=document.getElementById('blog-link');if(bl)bl.href='blog/'+l+'/';
   const sel=document.getElementById('lang-sel');if(sel)sel.value=l;
   try{if(!window.QR_FORCE_LANG)localStorage.setItem('qr-lang',l)}catch{}
   try{if(!window.QR_FORCE_LANG){const u=new URL(location.href);if(l==='en')u.searchParams.delete('lang');else u.searchParams.set('lang',l);history.replaceState(null,'',u)}}catch{}
